@@ -13,6 +13,19 @@ updates:
   #   schedule:
   #     interval: "daily"
 
+  - package-ecosystem: "pip"
+    directory: "/authn-service"
+    schedule:
+      interval: "daily"
+    labels:
+      - "triage-required"
+    assignees:
+      - "dungeonstechlead"
+    reviewers:
+      - "dragonsengineer"
+    commit-message:
+      prefix: "pip"
+      
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
